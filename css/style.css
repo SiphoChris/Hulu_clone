@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* variables */
+
+:root{
+    --primary: rgba(25, 208, 104, 0.8);
+    --secondary: rgb(18, 16, 20);
+    --accent: rgb(206, 206, 206);
+    --text-color: rgb(2, 2, 2);
+}
+
+/* nav */
+
+nav{
+    padding: 25px 35px;
+}
+
+/* header */
+
+header{
+    background-image: url(https://cnbl-cdn.bamgrid.com/assets/38ce8415b8fcb6b53a1bd080667195431f280bf5c15abb399dd818134f181e48/original);
+    height: 700px;
+    object-fit: cover;
+}
+.logo{
+    width: 60px;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.login-btn{
+    width: 80px;
+    height: 40px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    border: none;
+    color: rgb(225, 218, 218);
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 14px;
+}
+.login-btn:hover{
+    background-color: rgba(103, 101, 101, 1);
+}
+
+/* subscription plans */
+
+.subscription-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 80px;
+    column-gap: 20px;
+    text-align: center;
+}
+.subscribe-title{
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: bold;
+}
+.subscription-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    height: 100px;
+}
+.subscribe-btn{
+    background-color: var(--primary);
+    border-radius: 3px;
+    border: none;
+    padding: 12px 130px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+.subscribe-text{
+    font-size: 26px;
+    color: var(--accent);
+    font-weight: bold;
+}
+.subscribe-link-container{
+    display: flex;
+    justify-content: center;
+}
+.subscribe-links{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 180px;
+    gap: 30px;
+}
+.subscribe-link>a,
+.subscribe-link.view-plans{
+    color: var(--accent);
+}
+div[class="arrow"]{
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+p[class="subscribe-link"] a{
+    font-size: 13px;
+}
+.subscribe-link.view-plans{
+   text-decoration: none;
+}
