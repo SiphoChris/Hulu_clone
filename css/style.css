@@ -114,3 +114,30 @@ p[class="subscribe-link"] a{
 .subscribe-link.view-plans{
    text-decoration: none;
 }
+
+/* custom plan */
+
+.custom-plan{   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 150px;
+    background-image: linear-gradient(to top, rgb(34, 80, 57) 20%, rgb(41, 156, 97) 80%);
+}
+.custom-plan-btn{
+    border: 3px solid var(--accent);
+    background-color: 
+    transparent;
+    width: 280px;
+    height: 40px;
+    border-radius: 3px;
+    color: var(--accent);
+    font-weight: bold;
+}
+.custom-plan>.custom-plan-title{
+    color: var(--accent);
+    font-size: 19px;
+    font-weight: bold;
+}
